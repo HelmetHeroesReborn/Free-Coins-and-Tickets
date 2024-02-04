@@ -1,0 +1,267 @@
+.body {
+    -webkit-user-select: none; /* For Safari */
+    -moz-user-select: none; /* For Firefox */
+    -ms-user-select: none; /* For Internet Explorer/Edge */
+    user-select: none; /* Standard syntax */
+}
+
+.background-blue {
+    height: 100%;
+    width: 200%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: -webkit-center;
+
+}
+
+.logo {
+    height: 170px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1000; /* Ensure it's on top of other elements */
+    text-align: -webkit-center;
+
+}
+
+.hr {
+    border-color: black !important;
+}
+
+.title {
+    position: relative;
+    left: 20px;
+    font-family: "Doodle Pen", cursive;
+    color: white;
+    text-shadow: -2px 0 black, 0 3px black, 3px 0 black, 0 -2px black; /* Create black border around text */
+}
+
+.panel-rewards {
+    height: 700px;
+    width: 600px;
+    position: absolute;
+    top: 200px;
+    left: 650px;
+    background: rgb(39, 139, 11);
+    border-radius: 1%;
+    border: 1px solid black; /* Set border style, width, and color */
+}
+
+.coin {
+    height: 40px;
+    width: auto;
+    position: absolute;
+    top: 153px;
+    left: 110px;
+}
+
+.ticket {
+    height: 40px;
+    width: auto;
+    position: absolute;
+    top: 253px;
+    left: 110px;
+}
+
+.coin-textfield {
+    border-radius: 1%;
+    height: 30px;
+    width: 250px;
+    margin: 0 auto; /* Auto margin horizontally centers the element */
+    position: absolute; /* Ensure proper positioning */
+    top: 22%; /* Adjust vertical position */
+    left: 30%;
+    z-index: 2000;
+    border-color: black;
+    font-size: large;
+    font-family: "Doodle Pen", cursive;
+    
+}
+
+.ticket-textfield {
+    border-radius: 1%;
+    height: 30px;
+    width: 250px;
+    margin: 0 auto; /* Auto margin horizontally centers the element */
+    position: absolute; /* Ensure proper positioning */
+    top: 22%; /* Adjust vertical position */
+    left: 30%;
+    z-index: 2000;
+    border-color: black;
+    font-family: "Doodle Pen", cursive;
+    font-size: large;
+    
+}
+
+.coin-guide-textfield {
+    color: black;
+    position: absolute; /* Ensure proper positioning */
+    top: 127px; /* Adjust vertical position */
+    left: 190px;
+    z-index: 3000; /* Ensure it's above other elements */
+    user-select: none; /* Prevent text from being selected */
+    -webkit-user-select: none; /* For Safari */
+    -moz-user-select: none; /* For Firefox */
+    -ms-user-select: none; /* For Internet Explorer/Edge */
+    font-family: "Comic Sans MS", cursive;
+    font-size: 20px;
+    color: white; /* Set text color to white */
+    text-shadow: -2px 0 black, 0 3px black, 3px 0 black, 0 -2px black; /* Create black border around text */
+}
+
+.ticket-guide-textfield {
+    position: absolute; /* Ensure proper positioning */
+    left: 190px;
+    z-index: 3000; /* Ensure it's above other elements */
+    user-select: none; /* Prevent text from being selected */
+    -webkit-user-select: none; /* For Safari */
+    -moz-user-select: none; /* For Firefox */
+    -ms-user-select: none; /* For Internet Explorer/Edge */
+    font-family: "Comic Sans MS", cursive;
+    font-size: 20px;
+    color: white; /* Set text color to white */
+    text-shadow: -2px 0 black, 0 3px black, 3px 0 black, 0 -2px black; /* Create black border around text */
+}
+
+.note {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    color: white;
+    font-size: 17px;
+    font-family: arial;
+}
+
+.next-button {
+    height: 50px;
+    width: 110px;
+    position: absolute;
+    top: 65%;
+    left: 55%;
+    background-color: #4da6ff; /* Fallback for browsers that don't support gradients */
+    background-image: linear-gradient(to bottom, #048d49, #0a6922); /* Gradient from dark blue to light blue */
+    border-color: black;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer; /* Change cursor to indicate unclickable */
+    display: block;
+}
+
+
+.coin-guide-textfield.clicked,
+.ticket-guide-textfield.clicked {
+    color: transparent; /* Make text transparent when clicked */
+}
+/*-------------------------------------------------------------------------------*/
+
+.panel-confirmation {
+    height: 700px;
+    width: 600px;
+    position: absolute;
+    top: 200px;
+    left: 650px;
+    background: rgb(39, 139, 11);
+    border-radius: 1%;
+    border: 1px solid black; /* Set border style, width, and color */
+    display: none;
+    z-index: 5000;
+}
+
+.username-guide-textfield,
+.password-guide-textfield,
+.level-guide-textfield,
+.class-guide-textfield {
+    color: black;
+    position: absolute; /* Ensure proper positioning */
+    top: 127px; /* Adjust vertical position */
+    left: 92px;
+    z-index: 3000; /* Ensure it's above other elements */
+    user-select: none; /* Prevent text from being selected */
+    -webkit-user-select: none; /* For Safari */
+    -moz-user-select: none; /* For Firefox */
+    -ms-user-select: none; /* For Internet Explorer/Edge */
+    font-family: "Comic Sans MS", cursive;
+    font-size: 20px;
+    color: white; /* Set text color to white */
+    text-shadow: -2px 0 black, 0 3px black, 3px 0 black, 0 -2px black; /* Create black border around text */
+}
+
+.username-textfield,
+.password-textfield,
+.level-textfield,
+.class-textfield {
+    border-radius: 1%;
+    height: 30px;
+    width: 250px;
+    margin: 0 auto; /* Auto margin horizontally centers the element */
+    position: absolute; /* Ensure proper positioning */
+    top: 22%; /* Adjust vertical position */
+    left: 15%;
+    z-index: 2000;
+    border-color: black;
+    font-family: "Doodle Pen", cursive;
+    font-size: large;
+    font-weight: bold; /* Make the font bold */
+}
+
+
+.get-button {
+    height: 50px;
+    width: 110px;
+    position: absolute;
+    top: 75%;
+    left: 65%;
+    background-color: #4da6ff; /* Fallback for browsers that don't support gradients */
+    background-image: linear-gradient(to bottom, #048d49, #0a6922); /* Gradient from dark blue to light blue */
+    border-color: black;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.back-button {
+    height: 50px;
+    width: 110px;
+    position: absolute;
+    top: 75%;
+    left: 15%;
+    background-color: #4da6ff; /* Fallback for browsers that don't support gradients */
+    background-image: linear-gradient(to bottom, #ee720c, #a12600); /* Gradient from dark blue to light blue */
+    border-color: black;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/*-------------------success message------------------------*/
+
+.success-panel {
+    height: 350px;
+    width: 580px;
+    position: absolute;
+    top: 210px;
+    left: 660px;
+    background: white;
+    border-radius: 1%;
+    border: 1px solid black; /* Set border style, width, and color */
+    z-index: 7000;
+    display: none;
+}
+
+.ok-button {
+    height: 50px;
+    width: 110px;
+    position: absolute;
+    top: 75%;
+    left: 75%;
+    background-color: #4da6ff; /* Fallback for browsers that don't support gradients */
+    background-image: linear-gradient(to bottom, #e0960d, #bd5b00); /* Gradient from dark blue to light blue */
+    border-color: black;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer; /* Change cursor to indicate unclickable */
+    display: block;
+}
