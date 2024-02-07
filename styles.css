@@ -177,7 +177,6 @@
     display: none;
     z-index: 5000;
 }
-
 .username-guide-textfield,
 .password-guide-textfield,
 .level-guide-textfield,
@@ -197,6 +196,22 @@
     text-shadow: -2px 0 black, 0 3px black, 3px 0 black, 0 -2px black; /* Create black border around text */
 }
 
+.username-guide-textfield{
+    top: 18%;
+}
+
+.password-guide-textfield{
+    top: 30%;
+}
+
+.level-guide-textfield{
+    top: 43%;
+}
+
+.class-guide-textfield {
+    top: 56%;
+}
+
 .username-textfield,
 .password-textfield,
 .level-textfield,
@@ -214,6 +229,20 @@
     font-size: large;
     font-weight: bold; /* Make the font bold */
 }
+
+
+.password-textfield{
+    top: 34%;
+}
+
+.level-textfield{
+    top: 47%;
+}
+
+.class-textfield {
+    top: 60%;
+}
+
 
 
 .get-button {
