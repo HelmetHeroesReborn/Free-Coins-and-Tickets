@@ -31,11 +31,16 @@
 
 .title {
     position: relative;
+    color: green;
     left: 20px;
     font-family: "Doodle Pen", cursive;
+    font-size: 30px;
     color: white;
     text-shadow: -2px 0 black, 0 3px black, 3px 0 black, 0 -2px black; /* Create black border around text */
+    align-self: center;
 }
+
+
 
 .panel-rewards {
     height: 700px;
@@ -304,6 +309,23 @@
     display: block;
 }
 
+.title2 {
+    position: relative;
+    left: 20px;
+    font-size: 30px;
+    font-family: "Doodle Pen", cursive;
+    color: white;
+    text-shadow: -2px 0 black, 0 3px black, 3px 0 black, 0 -2px black; /* Create black border around text */
+}
+
+.title2-details {
+    position: relative;
+    left: 20px;
+    font-family: "Doodle Pen", cursive;
+    color: white;
+    text-shadow: -2px 0 black, 0 3px black, 3px 0 black, 0 -2px black; /* Create black border around text */
+}
+
 /*-----------------------------Mobile View---------------------------*/
 
 
@@ -512,37 +534,37 @@
     cursor: pointer;
 }
 
-
 /*-------------------success message------------------------*/
 
 .success-panel {
-    height: 350px;
-    width: 580px;
+    height: 220px;
+    width: 295px;
     position: absolute;
-    top: 210px;
-    left: 660px;
-    background: white;
-    border-radius: 1%;
-    border: 1px solid black; /* Set border style, width, and color */
-    z-index: 7000;
-    display: none;
+    top: 160px;
+    left: 40px;
 }
 
 .ok-button {
-    height: 50px;
-    width: 110px;
+    height: 40px;
+    width: 90px;
     position: absolute;
     top: 75%;
-    left: 75%;
-    background-color: #4da6ff; /* Fallback for browsers that don't support gradients */
-    background-image: linear-gradient(to bottom, #e0960d, #bd5b00); /* Gradient from dark blue to light blue */
-    border-color: black;
-    border-radius: 10px;
-    font-size: 20px;
-    cursor: pointer; /* Change cursor to indicate unclickable */
-    display: block;
+    left: 65%;
+    font-size: 15px;
 }
 
+.title2 {
+    position: relative;
+    left: 20px;
+    font-size: 20px;
+}
+
+.title2-details {
+    position: relative;
+    left: 10px;
+    font-size: 15px;
+    text-shadow: -2px 0 black, 0 3px black, 3px 0 black, 0 -2px black; /* Create black border around text */
+}
 
 
   

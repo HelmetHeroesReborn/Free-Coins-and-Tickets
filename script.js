@@ -154,18 +154,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const successPanel = document.querySelector(".success-panel"); // Corrected
 
-        // Function to check if all fields are not empty
-        function checkFieldsNotEmpty() {
-            return (
-                usernameField.value.trim() !== "" &&
-                passwordField.value.trim() !== "" &&
-                levelField.value.trim() !== "" &&
-                classField.value.trim() !== "" &&
-                coinField.value.trim() !== "" &&
-                ticketField.value.trim() !== ""
-            );
-        }
-
         // Check if all fields are not empty
        
             // Hide confirmation panel
